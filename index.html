@@ -26,6 +26,49 @@
 
   <!-- Responsive Stylesheet File -->
   <link href="css/responsive.css" rel="stylesheet">
+  
+  <style>
+  
+	.abcd {
+	background-color: blue;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	}
+
+	.active, .abcd:hover {
+	  background-color: #555;
+	}
+
+	.abcd:after {
+	  content: '\002B';
+	  color: white;
+	  font-weight: bold;
+	  float: right;
+	  margin-left: 5px;
+	}
+
+	.content {
+	  padding: 0 18px;
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.2s ease-out;
+	  background-color: #f1f1f1;
+	}
+	
+	/* Content */
+	.content2 {
+	  background-color: white;
+	  padding: 10px;
+	}
+	
+  </style>
+  
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -174,7 +217,7 @@
               <div class="single-skill">
                 <div class="progress-circular">
                   <input type="text" class="knob" value="0" data-rel="70" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
-                  <h3 style="color:black;">AWS Serverless (DynamoDB,REST API), Node JS, Linux, Git</h3>
+                  <h3 style="color:black;">AWS Serverless, Node JS, Linux, Git</h3>
                 </div>
               </div>
             </div>
@@ -201,15 +244,13 @@
                 <a href="#"><img src="img/portfolio/pdam.jpg" alt="" /></a>
                 <div class="add-actions text-center">
                   <div class="project-dec">
-                    <a href="portfolio/pdam.html">
                       <h4>PDAM Tegal City</h4>
-                      <span>Web Developer</span>
-                    </a>
+                      <span>Web Developer</span></br>
                   </div>
                 </div>
               </div>
             </div>
-			</div>
+		  </div>
           <!-- single-awesome-project end -->
           <!-- single-awesome-project start -->
           <div class="col-md-3 photo">
@@ -218,10 +259,8 @@
                 <a href="#"><img src="img/portfolio/taxpayment.jpg" alt="" /></a>
                 <div class="add-actions text-center">
                   <div class="project-dec">
-                    <a href="portfolio/taxpay.html">
                       <h4>PBB Tax Payment System</h4>
                       <span>Web Developer</span>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -235,10 +274,8 @@
                 <a href="#"><img src="img/portfolio/gopulsa.png" alt="" /></a>
                 <div class="add-actions text-center">
                   <div class="project-dec">
-                    <a href="portfolio/gopulsa.html">
                       <h4>GoPulsa</h4>
                       <span>Full Stack</span>
-                    </a>
                   </div>
                 </div>
              </div>
@@ -252,10 +289,8 @@
                 <a href="#"><img src="img/portfolio/goride2.jpg" alt="" /></a>
                 <div class="add-actions text-center">
                   <div class="project-dec">
-                    <a href="img/portfolio/goride.html">
                       <h4>GoRide</h4>
                       <span>Full Stack</span>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -264,6 +299,85 @@
         </div>
       </div>
     </div>
+	
+	<button class="abcd">Information system application PDAM city of Tegal for the community, especially the people of the city of Tegal</button>
+	<div class="content">
+		<!-- Container for the image gallery -->
+			<!-- Slideshow container -->
+		
+		<div class="row">
+		  <div class="col-md-6">
+			<div class="content2">
+			  <img src="img/portfolio/homepdam2.png" alt="homepage" style="width:100%">
+			  <h3>The Application Homepage</h3>
+			 </div>
+		  </div>
+		  <div class="col-md-6">
+			<div class="content2">
+			<img src="img/portfolio/profilepdam.png" alt="profilepage" style="width:100%">
+			  <h3>Profile Page PDAM city of Tegal</h3>
+			</div>
+		  </div>
+		<!-- END GRID -->
+		</div></br>
+		<center>
+			<a href="https://github.com/MFikriS/PDAM-Kota-Tegal" class="btn btn-primary btn-lg">Source Code</a>
+		</center>
+		</br>
+	</div>
+	<button class="abcd">PBB Tax Payment Application</button>
+	<div class="content">
+		<!-- Container for the image gallery -->
+			<!-- Slideshow container -->
+		
+		<div class="row">
+		  <div class="col-md-6">
+			<div class="content2">
+			  <img src="img/portfolio/pbb1.png" alt="addsppt" style="width:100%">
+			  <h3>Add SPPT (Surat Pemberitahuan Pajak Terhutang)</h3>
+			 </div>
+		  </div>
+		  <div class="col-md-6">
+			<div class="content2">
+			<img src="img/portfolio/pbb2.png" alt="editsppt" style="width:100%">
+			  <center>
+			  <h3>Edit SPPT</h3>
+			  </center>
+			</div>
+		  </div>
+		<!-- END GRID -->
+		</div></br>
+		<center>
+			<a href="https://github.com/MFikriS/Kelompok-9-Impal-IFIK-40-01" class="btn btn-primary btn-lg">Source Code</a>
+		</center>
+		</br>
+	</div>
+	<button class="abcd">GoPulsa</button>
+	<div class="content">
+		<!-- Container for the image gallery -->
+			<!-- Slideshow container -->
+		
+		<div class="row">
+		  <div class="col-md-6">
+			<div class="content2">
+			  <img src="img/portfolio/gopulsa2.png" alt="addsppt" style="width:100%">
+			  <h3>Menu Pulsa</h3>
+			 </div>
+		  </div>
+		  <div class="col-md-6">
+			<div class="content2">
+			<img src="img/portfolio/gopulsa3.png" alt="editsppt" style="width:100%">
+			  <center>
+			  <h3>Menu Paket Data</h3>
+			  </center>
+			</div>
+		  </div>
+		<!-- END GRID -->
+		</div></br>
+		<center>
+			<a href="https://github.com/MFikriS/GoPulsa" class="btn btn-primary btn-lg">Source Code</a>
+		</center>
+	</div>
   </div>
   
   <!-- Start Footer bottom Area -->
@@ -313,7 +427,7 @@
               <p>
                 &copy; <strong>Muhammad Fikri Septiawan</strong>
               </p>
-            </div
+            </div>
           </div>
         </div>
       </div>
@@ -335,8 +449,42 @@
   <script src="lib/appear/jquery.appear.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
 
   <script src="js/main.js"></script>
+  
+  <script>
+	var coll = document.getElementsByClassName("abcd");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+		  content.style.maxHeight = null;
+		} else {
+		  content.style.maxHeight = content.scrollHeight + "px";
+		} 
+	  });
+	}
+	
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}
+	  slides[slideIndex-1].style.display = "block";
+	  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+  </script>
 </body>
 
 </html>
